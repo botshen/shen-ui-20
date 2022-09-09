@@ -14,7 +14,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js"],
+    extensions: [".tsx", ".ts", ".js", ".jsx"],
   },
   output: {
     filename: "index.js",
@@ -22,12 +22,26 @@ module.exports = {
     library: "shenui",
     libraryTarget: "umd",
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: "our project",
-      template: "index.html",
-    }),
-  ],
+  // plugins: [
+  //   new HtmlWebpackPlugin({
+  //     title: "our project",
+  //     template: "index.html",
+  //   }),
+  // ],
+  // externals: {
+  //   react: {
+  //     commonjs: "react",
+  //     commonjs2: "react",
+  //     amd: "react",
+  //     root: "React",
+  //   },
+  //   "react-dom": {
+  //     commonjs: "react-dom",
+  //     commonjs2: "react-dom",
+  //     amd: "react-dom",
+  //     root: "ReactDOM",
+  //   },
+  // },
   devServer: {
     static: path.join(__dirname, "dist"),
     compress: true,
