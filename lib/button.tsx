@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button: React.FC = () => {
-  return <button>Click me</button>;
+const Button = () => {
+  return <button>xxx</button>;
 };
 export default Button;
