@@ -14,6 +14,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14.19.3
+      - run: npm i
       - run: npm ci
       - run: yarn test-coverage
       - name: Coveralls
