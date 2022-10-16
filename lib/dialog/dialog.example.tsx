@@ -1,44 +1,44 @@
-import React, {useState} from 'react';
-import Dialog, {alert} from './dialog';
+import React, { useState } from 'react'
+import Dialog, { alert } from './dialog'
 
 export default function () {
-    const [x, setX] = useState(false);
-    const [y, setY] = useState(false);
-    return (
+  const [x, setX] = useState(false)
+  const [y, setY] = useState(false)
+  return (
         <div>
 
-            <div style={{position: 'relative', zIndex: 10, border: '1px solid red', color: 'red'}}>
+            <div style={{ position: 'relative', zIndex: 10, border: '1px solid red', color: 'red' }}>
                 <h1>example 1</h1>
                 <button onClick={() => setX(!x)}>click</button>
                 <Dialog visible={x} buttons={
                     [
                         <button onClick={() => {
-                            setX(false);
+                          setX(false)
                         }}>1</button>,
                         <button onClick={() => {
-                            setX(false);
-                        }}>2</button>
+                          setX(false)
+                        }}>2</button>,
                     ]
                 } onClose={() => {
-                    setX(false);
+                  setX(false)
                 }}>
                     <strong>hi</strong>
                 </Dialog>
             </div>
-            <div style={{position: 'relative', zIndex: 9}}>
+            <div style={{ position: 'relative', zIndex: 9 }}>
                 <h1>example 2</h1>
                 <button onClick={() => setY(!y)}>click</button>
                 <Dialog visible={y} closeOnClickMask={true} buttons={
                     [
                         <button onClick={() => {
-                            setY(false);
+                          setY(false)
                         }}>1</button>,
                         <button onClick={() => {
-                            setY(false);
-                        }}>2</button>
+                          setY(false)
+                        }}>2</button>,
                     ]
                 } onClose={() => {
-                    setY(false);
+                  setY(false)
                 }}>
                     <strong>hi</strong>
                 </Dialog>
@@ -48,5 +48,5 @@ export default function () {
                 <button onClick={() => alert('1')}>alert</button>
             </div>
         </div>
-    );
+  )
 }

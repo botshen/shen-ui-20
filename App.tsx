@@ -1,14 +1,14 @@
-import React from "react";
-import {NavLink, Outlet} from "react-router-dom";
-import Header from "./lib/layout/header";
-import Aside from "./lib/layout/aside";
+import React from 'react'
+import { NavLink, Outlet } from 'react-router-dom'
+import Header from './lib/layout/header'
+import Aside from './lib/layout/aside'
 
-import Layout from "./lib/layout/layout";
-import Content from "./lib/layout/content";
-import Footer from "./lib/layout/footer";
+import Layout from './lib/layout/layout'
+import Content from './lib/layout/content'
+import Footer from './lib/layout/footer'
 
 export const App: React.FC = () => {
-    return (
+  return (
         <div>
             <Layout className="site-page">
                 <Header className="site-header">
@@ -46,5 +46,5 @@ export const App: React.FC = () => {
                 </Footer>
             </Layout>
         </div>
-    );
+  )
 }

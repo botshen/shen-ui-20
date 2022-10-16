@@ -1,7 +1,7 @@
 module.exports = {
-  testEnvironment: "jsdom",
+  testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
   moduleNameMapper: {
-    "\\.(css|sass|scss)$": "identity-obj-proxy",
+    '\\.(css|sass|scss)$': 'identity-obj-proxy',
   },
-};
+}

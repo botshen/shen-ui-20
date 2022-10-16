@@ -1,10 +1,10 @@
-import React from "react";
-import "./importIcons.js";
-import "./icon.scss";
-import classes from "../helpers/classes";
+import React from 'react'
+import './importIcons.js'
+import './icon.scss'
+import classes from '../helpers/classes'
 
 interface IconProps extends React.SVGAttributes<SVGElement> {
-  name: string;
+  name: string
 }
 
 const Icon: React.FunctionComponent<IconProps> = ({
@@ -13,10 +13,10 @@ const Icon: React.FunctionComponent<IconProps> = ({
   ...restProps
 }) => {
   return (
-    <svg data-testid="test-icon" className={classes("fui-icon", className)} {...restProps}>
+    <svg data-testid="test-icon" className={classes('fui-icon', className)} {...restProps}>
       <use xlinkHref={`#${name}`} />
     </svg>
-  );
-};
+  )
+}
 
-export default Icon;
+export default Icon
