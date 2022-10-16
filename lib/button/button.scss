@@ -1,5 +1,4 @@
 @import "../helper";
-
 .fui-button {
   padding: 4px 16px;
   line-height: 22px;
@@ -21,15 +20,6 @@
     color: white;
     border: 1px solid $main-color;
     background: $main-color;
-    &:hover, &:focus {
-      background: lighten($main-color, 10%);
-      border-color: lighten($main-color, 10%);
-    }
-  }
-  &-danger {
-    color: white;
-    border: 1px solid $main-color;
-    background: red;
     &:hover, &:focus {
       background: lighten($main-color, 10%);
       border-color: lighten($main-color, 10%);

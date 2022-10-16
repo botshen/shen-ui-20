@@ -9,6 +9,7 @@ import ErrorPage from './error-page'
 import { IconExample } from './lib/icon/icon.example'
 import ButtonExample from './lib/button/button.example'
 import LayoutExample from './lib/layout/layout.example'
+import FormExample from './lib/form/form.example'
 import './main.scss'
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: 'layout',
         element: <LayoutExample/>,
+      },
+      {
+        path: 'form',
+        element: <FormExample/>,
       },
     ],
   },
