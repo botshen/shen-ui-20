@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Fragment, useState } from 'react'
+import { useState } from 'react'
 import Button from '../button/button'
 import type { FormValue } from './form'
 import Form from './form'
@@ -66,10 +66,10 @@ const FormExample: React.FunctionComponent = () => {
       <Form value={formData}
             fields={fields}
             buttons={
-              <Fragment>
-                <Button type="submit" level="important">提交</Button>
-                <Button>返回</Button>
-              </Fragment>
+                [
+                <Button type="submit" level="important">提交</Button>,
+                <Button>返回</Button>,
+                ]
             }
             errors={errors}
             transformError={transformError}

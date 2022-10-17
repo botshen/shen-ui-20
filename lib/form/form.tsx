@@ -16,7 +16,7 @@ export interface FormValue {
 interface Props {
   value: FormValue
   fields: Array<{ name: string; label: string; input: { type: string } }>
-  buttons: any
+  buttons: React.ReactFragment
   onSubmit: React.FormEventHandler<HTMLFormElement>
   onChange: (value: FormValue) => void
   errors: { [K: string]: string[] }
